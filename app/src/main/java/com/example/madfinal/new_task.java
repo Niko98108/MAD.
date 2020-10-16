@@ -1,10 +1,6 @@
 package com.example.madfinal;
-
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.DatePickerDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -15,13 +11,8 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.madfinal.Database.DBHandler;
-import com.example.madfinal.Database.*;
-
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.GregorianCalendar;
 
 public class new_task extends AppCompatActivity {
 
@@ -74,7 +65,7 @@ public class new_task extends AppCompatActivity {
         setListener =  new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                month =month+1;
+                month = month+1;
                 String date = day+"/"+month+"/"+year;
                 datetext.setText(date);
 
